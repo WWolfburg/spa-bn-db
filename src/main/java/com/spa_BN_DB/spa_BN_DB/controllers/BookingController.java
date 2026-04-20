@@ -21,6 +21,11 @@ public class BookingController {
     @Autowired
     private BookingRepository bookingRepository;
 
+    @GetMapping("/")
+    public String health() {
+        return "Spa BN DB IS UP AND RUNNING =)";
+    }
+
     @GetMapping("/bookings")
     public List<Booking> getBookings() {
         return bookingRepository.findAll();

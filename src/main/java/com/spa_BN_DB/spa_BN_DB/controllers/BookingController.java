@@ -21,9 +21,9 @@ public class BookingController {
     @Autowired
     private BookingRepository bookingRepository;
 
-    @GetMapping("/")
+    @GetMapping(value = "/", produces = "text/html")
     public String health() {
-        return "Spa BN DB IS UP AND RUNNING =) go to the booking frontend https://stingray-app-37egs.ondigitalocean.app/";
+        return "Spa BN DB IS UP AND RUNNING =) go to the booking  <a href=\"https://stingray-app-37egs.ondigitalocean.app/\">FRONTEND/</a>";
     }
 
     @GetMapping("/bookings")

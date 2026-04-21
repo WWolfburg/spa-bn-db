@@ -7,11 +7,6 @@ public class SpaPackage {
 
     public SpaPackage() {}
 
-    public SpaPackage(String type, int basePrice, int pricePerPerson) {
-        this.type = type;
-        this.basePrice = basePrice;
-        this.pricePerPerson = pricePerPerson;
-    }
 
     public String getType() {
         return type;

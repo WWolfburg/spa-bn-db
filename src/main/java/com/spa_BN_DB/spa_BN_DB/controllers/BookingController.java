@@ -23,7 +23,7 @@ public class BookingController {
 
     @GetMapping("/")
     public String health() {
-        return "Spa BN DB IS UP AND RUNNING =)";
+        return "Spa BN DB IS UP AND RUNNING =) go to the booking frontend https://stingray-app-37egs.ondigitalocean.app/";
     }
 
     @GetMapping("/bookings")
